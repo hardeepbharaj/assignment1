@@ -1,0 +1,148 @@
+
+
+input[type="number"].rmv-def-number-spin-btn::-webkit-inner-spin-button,
+input[type="number"].rmv-def-number-spin-btn::-webkit-outer-spin-button{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.input-feild{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-feild>label{
+    color: #01a794;
+}
+
+/* .input-feild input, .input-feild select, .currency-feild, .mobile-num{
+    box-shadow: inset 0 0 5px #cccccc;
+} */
+
+@media only screen and (max-width : 570px) {
+    .input-feild input, .input-feild select, .currency-feild, .mobile-num{
+        font-size: 20px;
+    }
+    .input-feild>label{
+        font-size: 20px;
+    }
+}
+
+/* input:not([name=mobileNum]) { */
+input[name=mobileNum], input[name="invoiceAmt"]{
+    box-shadow: unset;
+    margin: 2px;
+    padding: 8px 15px;
+}
+
+.select-padding{
+    padding: 8px 7px;
+}
+
+.error-msg{
+    color: red;
+}
+
+.msg{
+    padding : 5px 12px; 
+}
+
+.warning-msg{
+    color: #ff9966;
+}
+
+.currency{
+    font-size: 15px;
+    padding: 7px 15px 7px 0;
+}
+
+.currency-input{
+    padding: 8px 7px 8px 7px;
+}
+
+.react-datepicker-popper{
+    z-index: 10005;
+}
+
+.dn{
+    display: none;
+}
+
+
+.react-datepicker__month-select, .react-datepicker__year-select{
+    background: #fff;
+}
+
+.textArea{
+    height: 45vh;
+}
+
+.checkBox-field{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px; 
+}
+
+.checkBox-field::selection{
+    background-color: #01a794 !important;
+}
+
+.veryfied{
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+    top: 25%;
+    color: green;
+}
+
+
+@media (max-width:760px){
+    .checkBox-field{
+        width: 25px;
+        height: 25px;
+        margin-right: 15px; 
+    }
+}
+
+.ques-wrapper > .form-group  input{
+    width : 30px;
+}
+.bg-grey-0032{
+    background: #f8f9f9;
+}
+
+
+.custom-form-group {
+    text-align: left;
+}
+
+.custom-form-group .warning{
+    color: green;
+    padding-left: 10px; 
+}
+
+
+.border-red-checkbox{
+    outline: 2px solid #c00;
+}
+
+.form-display-radio-error{
+    color: #c00;
+    padding-left: 10px;
+}
+
+.ques-wrapper  label{
+    margin-right: 20px;
+}
